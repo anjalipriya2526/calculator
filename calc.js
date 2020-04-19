@@ -1,15 +1,17 @@
 var result = document.getElementById("resultBox");
 
-function clickedNum (numValue) {
-    result.value += numValue; 
+function clickedNum (passedValue) {
+    result.value += passedValue; 
 }
 
 function clickedEquals() {
     if(result.value === ""){
         result.value = "0";
-    }
-    var resultNum = eval(result.value);
+    } else {
+    var resultExp = (result.value).replace(/[\u00d7]/gi, "*").replace(/[\u00f7]/gi, "/");
+    var resultNum = eval(resultExp);
     result.value = resultNum.toString();
+    }
 }
 
 function clickedClear() {
