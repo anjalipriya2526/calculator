@@ -66,3 +66,12 @@
 .resultBox:focus {
     outline: none;
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .resultBox {
+        -webkit-user-select: none; 
+        -moz-user-select: none;  
+        -ms-user-select: none;  
+        user-select: none;    
+    }
+}
