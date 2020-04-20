@@ -51,18 +51,6 @@
     background-color: rgba(255,255,255,0.4);
 }
 
-.btnClear:focus {
-    background-color: rgba(255,255,255,0.6);
-}
-
-.btnEquals:focus {
-    background-color: rgba(255,255,255,0.6);
-}
-
-.btnDiv:focus {
-    background-color: rgba(255,255,255,0.6);
-}
-
 .resultBox {
     cursor: default;
     height: 3rem;
