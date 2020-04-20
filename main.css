@@ -51,6 +51,18 @@
     background-color: rgba(255,255,255,0.4);
 }
 
+.btnClear {
+    border-top-right-radius: 12px;
+}
+
+.btnEquals {
+    border-bottom-left-radius: 12px;
+}
+
+.btnDiv {
+    border-bottom-right-radius: 12px;
+}
+
 .resultBox {
     cursor: default;
     height: 3rem;
