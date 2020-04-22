@@ -33,7 +33,6 @@ body {
 
 .calcTable {
     border-collapse: collapse;
-    border-radius: 12px;
     margin: auto;
     background: rgba(153,88,255,1);
     background: -webkit-linear-gradient(rgba(153,88,255,1),rgba(27,82,255,1));
@@ -54,6 +53,23 @@ body {
 }
 
 @media (hover: hover) and (pointer: fine) {
+    
+    .calcTable {
+        border-radius: 12px;
+    }
+    
+   .btnC {
+       border-top-right-radius: 12px;
+   }
+
+   .btnE {
+       border-bottom-left-radius: 12px;
+   }
+
+   .btnD {
+       border-bottom-right-radius: 12px;
+   }    
+    
    .btn:hover {
        background-color: rgba(255,255,255,0.6);
    }
@@ -65,18 +81,6 @@ body {
 
 .btnWhite {
     background-color: rgba(255,255,255,0.4);
-}
-
-.btnC {
-    border-top-right-radius: 12px;
-}
-
-.btnE {
-    border-bottom-left-radius: 12px;
-}
-
-.btnD {
-    border-bottom-right-radius: 12px;
 }
 
 .resultBox {
@@ -96,4 +100,32 @@ body {
 
 .resultBox:focus {
     outline: none;
+}
+
+@media screen and (max-width: 384px) {
+    .heading {
+        width: 230.4px;
+        height: 76.8px;
+        font-size: 28.8px;
+        line-height: 76.8px;
+    }
+    
+    .tableWrapper {
+        margin-top: -222px;
+    }
+    
+    .btn {
+        height: 76.8px;
+        width: 76.8px;
+        font-size: 38.4px;
+    }
+    
+    .resultBox {
+        height: 57.6px;
+        width: 297.6px;
+        font-size: 28.8px;
+        padding-right: 9.6px;
+        border-top: solid 1.25px rgba(255,255,255,0.4);
+        border-bottom: solid 1.25px rgba(255,255,255,0.4);
+    }
 }
